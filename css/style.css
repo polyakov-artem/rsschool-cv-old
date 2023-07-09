@@ -1,3 +1,323 @@
-.cv{
-  
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Regular"), url(/assets/fonts/roboto/Roboto.woff2) format("woff2"), url(/assets/fonts/roboto/Roboto.woff) format("woff"), url(/assets/fonts/roboto/Roboto.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(/assets/fonts/roboto/Robotobold.woff2) format("woff2"), url(/assets/fonts/roboto/Robotobold.woff) format("woff"), url(/assets/fonts/roboto/Robotobold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal
+}
+
+:root {
+  --dark: #333333;
+  --gray: #A9A9A9;
+  --blue: #56CCF2;
+  --blue-dark: #157698;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.7;
+  color: var(--dark);
+  background-color: #fff
+}
+
+.link {
+  color: var(--blue-dark)
+}
+
+.link:active,
+.link:focus,
+.link:hover {
+  color: var(--blue)
+}
+
+.title-h2 {
+  font-size: 1.4375rem;
+  line-height: 1.65;
+  font-weight: 700;
+  color: var(--blue-dark)
+}
+
+.cv {
+  max-width: 21cm;
+  min-height: 29.7cm;
+  margin: 0 auto
+}
+
+.cv__main {
+  margin: 0 auto;
+  max-width: 540px
+}
+
+.cv__column-info {
+  flex: 0 0 300px;
+  padding: 0 20px
+}
+
+.cv__column-experience {
+  flex: 1 1 auto;
+  padding: 0 20px
+}
+
+.cv__person,
+.cv__section {
+  margin-bottom: 1.875rem
+}
+
+.header {
+  margin: 0 auto;
+  padding: 10px 20px 30px;
+  max-width: 540px;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+}
+
+.header__home-link {
+  flex: none;
+  margin-right: auto;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.header__item {
+  margin-right: 20px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.header__link {
+  white-space: nowrap;
+}
+
+.person {
+  text-align: center
+}
+
+.person__img-wrap {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0 auto 20px
+}
+
+.person__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover
+}
+
+.person__name {
+  font-size: 1.4375rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.625rem
+}
+
+.person__name span {
+  color: var(--blue-dark);
+  font-weight: 700
+}
+
+.person__post {
+  color: var(--blue-dark);
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1.5rem
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+  color: var(--blue-dark);
+  flex-wrap: wrap
+}
+
+.info__item:not(:last-child) {
+  margin-bottom: .625rem
+}
+
+.info__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: .375rem;
+  flex: none
+}
+
+.section__header {
+  display: flex;
+  align-items: flex-start;
+  color: var(--blue-dark)
+}
+
+.section__header-icon {
+  width: 1.5rem;
+  height: 2.25rem;
+  margin-right: .625rem;
+  flex: none
+}
+
+.hobbies__item,
+.section__list-title,
+.section__title {
+  margin-bottom: .625rem
+}
+
+.hobbies__item {
+  display: flex;
+  align-items: center
+}
+
+.hobbies__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: .625rem
+}
+
+.dates-list__item {
+  display: flex
+}
+
+.dates-list__dates {
+  font-weight: 700;
+  white-space: nowrap
+}
+
+.dates-list__content {
+  padding-left: 20px
+}
+
+.dates-list__post {
+  font-weight: 700
+}
+
+.list__item {
+  padding-left: 25px;
+  position: relative
+}
+
+.list__item:before {
+  position: absolute;
+  top: .625rem;
+  left: .625rem;
+  content: "";
+  display: block;
+  width: .3125rem;
+  height: .3125rem;
+  border-radius: 100%;
+  background-color: var(--blue-dark)
+}
+
+.skill {
+  align-items: baseline;
+  display: flex
+}
+
+.skill__name {
+  margin-right: 10px;
+  flex: 0 0 80px
+}
+
+.skill__progress {
+  flex: 1 1 0
+}
+
+.progress {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: var(--gray);
+  border-radius: 0
+}
+
+.progress_value_25 .progress__line {
+  width: 25%
+}
+
+.progress_value_50 .progress__line {
+  width: 50%
+}
+
+.progress_value_75 .progress__line {
+  width: 75%
+}
+
+.progress__line {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  left: 0;
+  border-radius: 0;
+  background: var(--blue)
+}
+
+.section-skills__text {
+  margin-bottom: .625rem
+}
+
+.section-skills__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 300px
+}
+
+.section-skills__skill {
+  margin-bottom: 10px;
+  flex: 0 0 100%
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+
+@media(min-width:768px) {
+  .header {
+    padding: 10px 50px;
+    max-width: none;
+  }
+
+  .cv__main {
+    max-width: none;
+    padding: 30px;
+    display: flex
+  }
+
+  .section-skills__skills {
+    max-width: none
+  }
+
+  .section-skills__skill {
+    flex: 0 0 48%
+  }
+
+  .footer {
+    max-width: none;
+    padding: 0 50px;
+  }
 }
