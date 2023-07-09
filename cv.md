@@ -1,7 +1,6 @@
 # Polyakov Artem
 ### _Junior Frontend-developer_
-Age: 34
-City: Naberezhnye Chelny
+Age: 34. City: Naberezhnye Chelny
 
 ## Contacts
 - Phone: 12345678
