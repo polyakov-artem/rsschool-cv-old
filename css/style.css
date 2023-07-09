@@ -233,6 +233,10 @@ body {
   background-color: var(--blue-dark)
 }
 
+.code{
+  overflow: scroll;
+}
+
 .skill {
   align-items: baseline;
   display: flex
