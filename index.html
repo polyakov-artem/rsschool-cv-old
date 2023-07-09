@@ -1,38 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="theme-color" content="#FFFFFF">
-  <meta name="description" content="Index page">
-  <meta name="keywords" content="index, page">
-  <meta name="author" content="">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:image" content="">
-  <meta name="twitter:description" content="">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="">
-  <meta property="og:type" content="website">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#2b5797">
-  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff"> -->
-  <title>CV</title>
-  <link href="/css/style.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content>
+    <meta name="twitter:image" content>
+    <meta name="twitter:description" content>
+    <meta property="og:url" content>
+    <meta property="og:title" content>
+    <meta property="og:description" content>
+    <meta property="og:image" content>
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="./assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="./assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg"
+      color="#2b5797">
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config"
+      content="./assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>CV</title>
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/custom-reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
 
-<body class="cv">
-</body>
+  <body class="cv">
+    <header class="header">
+      <nav class="header__navbar">
+        <a class="header__home-link" href="./">
+          <img class="header__logo" alt='Лого' width="50" height="50" src="./assets/svg/logo.svg">
+        </a>
+
+        <ul class="header__menu">
+          <li class="header__item">
+            <a class="link header__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="header__item">
+            <a class="link header__link" href="#about">About me</a>
+          </li>
+          <li class="header__item">
+            <a class="link header__link" href="#education">Education</a>
+          </li>
+          <li class="header__item">
+            <a class="link header__link" href="#job">Job</a>
+          </li>
+          <li class="header__item">
+            <a class="link header__link" href="#experience">Experience</a>
+          </li>
+          <li class="header__item">
+            <a class="link header__link" href="#skills">Skills</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="cv__main">
+      <div class="cv__column-info">
+        <section class="person cv__person">
+          <div class="person__img-wrap">
+            <img class="person__img" width="200" height="200" src="./assets/images/1.jpg" alt="Фото">
+          </div>
+
+          <h1 class="person__name">
+            <span>Polyakov</span>
+            Artem
+          </h1>
+
+          <h3 class="person__post">Junior Frontend-developer</h3>
+          <ul class="info">
+            <li class="info__item">
+              <img class="info__icon" alt="Иконка" width="20" height="20" src="./assets/svg/info.svg">
+              <span class="info__item-text">
+                Age: 34
+              </span>
+            </li>
+            
+            <li class="info__item">
+              <img class="info__icon" alt="Иконка" width="20" height="20" src="./assets/svg/place.svg">
+              <span class="info__item-text">
+                City: Naberezhnye Chelny
+              </span>
+            </li>
+
+            <li class="info__item" id="contacts">
+              <img class="info__icon" alt="Иконка" width="20" height="20" src="./assets/svg/phone.svg">              
+              <span class="info__item-text">
+                Phone:
+                <a class="link info__link" href="tel:+12345678910">12345678910</a>
+              </span>
+            </li>
+
+            <li class="info__item">
+              <img class="info__icon" alt="Иконка" width="20" height="20" src="./assets/svg/email.svg">
+              <span class="info__item-text">
+                E-mail:
+                <a class="link info__link" href="mailto:Polyakov.Artem.V@yandex.ru?subject=Резюме">Polyakov.Artem.V@yandex.ru</a>
+              </span>
+            </li>
+
+          </ul>
+        </section>
+
+        <section id="about" class="section section-about cv__section">
+          <h2 class="title-h2 section__title">About me</h2>
+          <p class="section-about__text">I am very passionate about the topic of web development. I am constantly striving to improve the quality of the project structure and code based on the experience gained while analyzing other people's work and reading documentation. We plan to master React/Redux at a competitive level.</p>
+        </section>
+
+        <section class="section section-hobby cv__section">
+          <h2 class="title-h2 section__title">Hobby</h2>
+
+          <ul class="hobbies">
+            <li class="hobbies__item">
+              <img class="hobbies__icon" alt="Иконка" width="18" height="18" src="./assets/svg/monitor.svg">
+              <span class="hobbies__title">Programming</span>
+            </li>
+            <li class="hobbies__item">
+              <img class="hobbies__icon" alt="Иконка" width="18" height="18" src="./assets/svg/bicycle.svg">
+              <span class="hobbies__title">Cycling</span>
+            </li>
+            <li class="hobbies__item">
+              <img class="hobbies__icon" alt="Иконка" width="18" height="18" src="./assets/svg/ball.svg">
+              <span class="hobbies__title">Volleyball</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="cv__column-experience">
+        <section id="education" class="section cv__section">
+          <header class="section__header">
+            <img class="section__header-icon" alt="Иконка" width="24" height="36" src="./assets/svg/school.svg">
+            <h2 class="title-h2 section__title">Education</h2>
+          </header>
+          <ul class="dates-list">
+            <li class="dates-list__item">
+              <div class="dates-list__dates">
+                <time datetime="2006">2006</time>-
+                <time datetime="2011">2011</time>
+              </div>
+              <div class="dates-list__content">
+                <p class="dates-list__description">Higher education, INEKA, specialty - hydraulic machines, hydraulic drives and hydropneumoautomatics.</p>
+                <p class="dates-list__post">Specialist</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="job" class="section cv__section">
+          <header class="section__header">
+            <img class="section__header-icon" alt="Иконка" width="24" height="36" src="./assets/svg/work.svg">
+            <h2 class="title-h2 section__title">Job</h2>
+          </header>
+          <ul class="dates-list">
+            <li class="dates-list__item">
+              <div class="dates-list__dates">
+                <time datetime="2011">2011</time>-
+                <time datetime="2020">2023</time>
+              </div>
+              <div class="dates-list__content">
+                <p class="dates-list__description">KAMAZ, Scientific and Technical Center</p>
+                <p class="dates-list__post">Chief Specialist</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="experience" class="section cv__section">
+          <header class="section__header">
+            <img class="section__header-icon" alt="Иконка" width="24" height="36" src="./assets/svg/badge.svg">
+            <h2 class="title-h2 section__title">Experience</h2>
+          </header>
+          <p class="section__list-title"> Examples:</p>
+          <ul class="list">
+            <li class="list__item">
+              <a class="link" href="https://polyakov-artem.github.io/landing-example/cards.html" target="_blank">Cards</a>
+            </li>
+            <li class="list__item">
+              <a class="link" href="https://polyakov-artem.github.io/landing-example/form-elements.html" target="_blank">Form-elements</a>
+            </li>
+            <li class="list__item">
+              <a class="link" href="https://polyakov-artem.github.io/landing-example/headers-and-footers.html" target="_blank">Headers and footers</a>
+            </li>
+            <li class="list__item">
+              <a class="link" href="https://polyakov-artem.github.io/landing-example/landing-page.html" target="_blank">Landing page</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section cv__section">
+          <header class="section__header">
+            <img class="section__header-icon" alt="Иконка" width="24" height="36" src="./assets/svg/code.svg">
+            <h2 class="title-h2 section__title">Code example</h2>
+          </header>
+          <p>Palindrome Strings:</p>
+          <pre><code class="code">function isPalindrome(line) {
+  return `${line}` == `${line}`.split('').reverse().join('');
+}</code></pre>
+        </section>
+
+        <section id="skills" class="section cv__section section-skills">
+          <header class="section__header">
+            <img class="section__header-icon" alt="Иконка" width="24" height="36" src="./assets/svg/settings.svg">
+            <h2 class="title-h2 section__title">Skills</h2>
+          </header>
+          <p class="section-skills__text">English level A2+, able to understand the technical documentation.</p>
+          <ul class="section-skills__skills">
+            <li class="skill section-skills__skill">
+              <p class="skill__name">Javascript</p>
+              <div class="progress progress_value_50 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+            <li class="skill section-skills__skill">
+              <p class="skill__name">JQuery</p>
+              <div class="progress progress_value_50 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+            <li class="skill section-skills__skill">
+              <p class="skill__name">HTML5</p>
+              <div class="progress progress_value_75 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+            <li class="skill section-skills__skill">
+              <p class="skill__name">PUG</p>
+              <div class="progress progress_value_75 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+            <li class="skill section-skills__skill">
+              <p class="skill__name">CSS/SCSS</p>
+              <div class="progress progress_value_75 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+            <li class="skill section-skills__skill">
+              <p class="skill__name">GIT</p>
+              <div class="progress progress_value_50 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+            <li class="skill section-skills__skill">
+              <p class="skill__name">Webpack</p>
+              <div class="progress progress_value_50 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+            <li class="skill section-skills__skill">
+              <p class="skill__name">Gulp</p>
+              <div class="progress progress_value_50 skill__progress">
+                <div class="progress__line"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="section cv__section">
+          <header class="section__header">
+            <img class="section__header-icon" alt="Иконка" width="24" height="36" src="./assets/svg/skills.svg">
+            <h2 class="title-h2 section__title">Personal qualities</h2>
+          </header>
+          <ul class="list">
+            <li class="list__item">Responsibility</li>
+            <li class="list__item">Sense of duty</li>
+            <li class="list__item">Quick learning</li>
+            <li class="list__item">Purposefulness</li>
+            <li class="list__item">I am constantly engaged in self-development in the professional sphere</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="footer__link" href="https://github.com/polyakov-artem/" target="_blank">
+        <img src="./assets/svg/github.svg" width="30" height="30" alt="Gitgub">
+        GitHub
+      </a>
+      <p class="footer__year">2023</p>
+      <a class="footer__link" href="https://rs.school/" target="_blank">
+        <img src="./assets/svg/rs_school.svg" alt="RS School" width="90" height="30">
+      </a>
+    </footer>
+  </body>
 
 </html>
