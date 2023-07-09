@@ -19,6 +19,15 @@ I am very passionate about the topic of web development. I am constantly strivin
 ## Experience
 - [Landing example](https://github.com/polyakov-artem/landing-example)
 
+## Code example
+Palindrome Strings:
+
+```
+function isPalindrome(line) {
+  return `${line}` == `${line}`.split('').reverse().join('');
+}
+```
+
 ## Skills
 English level A1-A2, able to understand the technical documentation.
 - Javascript
