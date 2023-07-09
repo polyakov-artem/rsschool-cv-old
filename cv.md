@@ -18,3 +18,26 @@ I am very passionate about the topic of web development. I am constantly strivin
 
 ## Experience
 - [Landing example](https://github.com/polyakov-artem/landing-example)
+
+## Skills
+English level A1-A2, able to understand the technical documentation.
+- Javascript
+- JQuery
+- HTML5
+- PUG
+- CSS/SCSS
+- GIT
+- Webpack
+- Gulp
+
+## Personal qualities
+- Responsibility
+- Sense of duty
+- Quick learning
+- Purposefulness
+- I am constantly engaged in self-development in the professional sphere
+
+## Hobby
+- Programming
+- Cycling
+- Volleyball
